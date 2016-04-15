@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<div id="content">
+    This is where the magic happens.
+    <script src="program.js"></script>
+</div>
+
+<br/>
+<br/>
+<ul>
+    <li onmouseover="hover('Just getting started...')">Oneshot</li>
+    <li onmouseover="hover('Ready for more!')">Twoshots</li>
+    <li onmouseover="hover('It\'s party time!')">Threeshots</li>
+</ul>
+<script>
+    function hover(description) {
+        console.log(description);
+        document.getElementById('content').innerHTML = description;
+    }
+</script>
